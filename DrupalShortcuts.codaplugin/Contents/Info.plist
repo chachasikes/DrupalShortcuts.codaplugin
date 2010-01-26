@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CodaScriptPlugIn</string>
+	<key>CFBundleIconFile</key>
+	<string>plug-in</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.panic.CodaScriptPlugIn</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>CodaPlugInMinimumAPIVersion</key>
+	<string>3</string>
+	<key>NSPrincipalClass</key>
+	<string>CodaScriptPlugIn</string>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>selection</string>
+			<key>keyEquivalent</key>
+			<string>@.</string>
+			<key>keyEquivalentConflict</key>
+			<false/>
+			<key>name</key>
+			<string>Drupal Doc Block</string>
+			<key>output</key>
+			<string>replaceSelectedText</string>
+			<key>script</key>
+			<string>drupaldocblock.php</string>
+			<key>setInsertionPoint</key>
+			<false/>
+			<key>uuid</key>
+			<string>914A17B1-92B8-4FDC-A816-E116CCE44DDA</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>none</string>
+			<key>keyEquivalent</key>
+			<string>@&gt;</string>
+			<key>keyEquivalentConflict</key>
+			<false/>
+			<key>name</key>
+			<string>Drupal File Block</string>
+			<key>output</key>
+			<string>afterSelectedText</string>
+			<key>script</key>
+			<string>drupal_file_block.php</string>
+			<key>uuid</key>
+			<string>6CCEAFB2-FD8C-453F-96FC-D25F0E91361B</string>
+		</dict>
+	</array>
+</dict>
+</plist>
