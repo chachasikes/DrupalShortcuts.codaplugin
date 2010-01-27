@@ -50,7 +50,7 @@ _____________
 
 
 
-*DrupalFileBlock: Create the block of text that goes at the
+*DrupalFileBlock: Insert the standard block of text that goes at the
  beginning of Drupal files.
 
   How to use:
