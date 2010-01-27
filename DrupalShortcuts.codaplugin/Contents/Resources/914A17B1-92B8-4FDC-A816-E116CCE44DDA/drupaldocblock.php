@@ -25,15 +25,26 @@ function process_function($input) {
     $parameter_formatted = '
  *
  * @param ' . $param . '
- *   Parameter description here';
-   $parameters_formatted .= $parameter_formatted;
+ *   Parameter description here.';
+   $parameters_output .= $parameter_formatted;
+  }
+
+  // Add a return documentation.
+  $return_param = strpos($input, 'return');
+  if($return_param) {
+    $return_output = '
+ *
+ * @return
+ *   Return description here.';
+
   }
 
 
   $output = '
 /**
  * Description of ' . trim($input_formatted) . '.' 
-  . $parameters_formatted .'
+  . $parameters_output 
+  . $return_output . '
  */
 ' . $input ;
 
