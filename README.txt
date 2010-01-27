@@ -20,7 +20,7 @@ Features include:
 An example:
 
 _____________
-function myFunction($param1, $param2) {
+function my_function($param1, $param2) {
   return 'string';
 }
 _____________
@@ -29,8 +29,9 @@ becomes:
 
 _____________
 
+
 /**
- * Description of myFunction.
+ * Description of my_function.
  *
  * @param $param1
  *   Parameter description here.
@@ -41,7 +42,7 @@ _____________
  * @return
  *   Return description here.
  */
-function myFunction($param1, $param2) {
+function my_function($param1, $param2) {
   return 'string';
 }
 _____________
