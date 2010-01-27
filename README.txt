@@ -29,7 +29,6 @@ Becomes:
 
 _____________
 
-
 /**
  * Description of my_function.
  *
