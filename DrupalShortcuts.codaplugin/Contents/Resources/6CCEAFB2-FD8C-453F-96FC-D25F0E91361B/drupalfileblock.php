@@ -16,7 +16,6 @@ function process_function($input) {
 
 /**
  * @file
-loaded
  *
  * Description of file.
  */

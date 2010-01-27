@@ -30,14 +30,28 @@
 				<dict>
 					<key>fallbackInput</key>
 					<string>none</string>
+					<key>input</key>
+					<string>selection</string>
+					<key>keyEquivalent</key>
+					<string>@\</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
 					<key>name</key>
-					<string>CoderFormatFunctions</string>
+					<string>Format Function Sugar</string>
+					<key>output</key>
+					<string>replaceSelectedText</string>
+					<key>preprocess</key>
+					<string>none</string>
+					<key>script</key>
+					<string>drupalformatfunction.php</string>
+					<key>setInsertionPoint</key>
+					<true/>
 					<key>uuid</key>
-					<string>D3BC988A-453F-41F7-B2C7-E43690501B9B</string>
+					<string>429BA9F4-72A7-4A56-A165-53DE66278F3D</string>
 				</dict>
 			</array>
 			<key>name</key>
-			<string>FormatCode</string>
+			<string>Format Code</string>
 		</dict>
 		<dict>
 			<key>children</key>
@@ -50,7 +64,7 @@
 					<key>keyEquivalent</key>
 					<string>@&gt;</string>
 					<key>keyEquivalentConflict</key>
-					<false/>
+					<true/>
 					<key>name</key>
 					<string>Drupal File Block</string>
 					<key>output</key>
@@ -68,7 +82,7 @@
 					<key>keyEquivalent</key>
 					<string>@.</string>
 					<key>keyEquivalentConflict</key>
-					<false/>
+					<true/>
 					<key>name</key>
 					<string>Drupal Doc Block</string>
 					<key>output</key>
@@ -76,9 +90,9 @@
 					<key>script</key>
 					<string>drupaldocblock.php</string>
 					<key>setInsertionPoint</key>
-					<false/>
+					<true/>
 					<key>uuid</key>
-					<string>914A17B1-92B8-4FDC-A816-E116CCE44DDA</string>
+					<string>671CD7EC-B759-4F82-BF72-CA0EDCC7C0F5</string>
 				</dict>
 			</array>
 			<key>name</key>
