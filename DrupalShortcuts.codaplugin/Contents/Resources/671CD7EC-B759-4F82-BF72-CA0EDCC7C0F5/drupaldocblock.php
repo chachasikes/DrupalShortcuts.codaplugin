@@ -25,7 +25,7 @@ function create_doc_block($input) {
   foreach($parameters as $param) {
     $parameter_formatted = '
  *
- * @param ' . $param . '
+ * @param ' . trim($param) . '
  *   Variable.';
    $parameters_output .= $parameter_formatted;
   }

@@ -39,7 +39,7 @@ function function_sugar($input) {
   $args = explode(' ', $return_string[0]);
 
   $output = '
-' .   array_shift($args) . ' ' . array_shift($args);
+' .   trim(array_shift($args)) . ' ' . trim(array_shift($args));
   // Remove last item if it is empty.
   $last_arg = $args[count($args) - 1];
   if(empty($last_arg)) {
@@ -76,7 +76,7 @@ function create_doc_block($input) {
   foreach($parameters as $param) {
     $parameter_formatted = '
  *
- * @param ' . $param . '
+ * @param ' . trim($param) . '
  *   Variable.';
    $parameters_output .= $parameter_formatted;
   }

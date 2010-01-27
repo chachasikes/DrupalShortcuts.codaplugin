@@ -36,7 +36,7 @@ _____________
  * @param $param1
  *   Variable.
  *
- * @param  $param2
+ * @param $param2
  *   Variable.
  *
  * @return
@@ -98,7 +98,7 @@ _____________
  * @param $astring
  *   Variable.
  *
- * @param  $array
+ * @param $array
  *   Variable.
  *
  * @return
