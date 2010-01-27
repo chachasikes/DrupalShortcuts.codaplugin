@@ -25,7 +25,7 @@ function my_function($param1, $param2) {
 }
 _____________
 
-becomes:
+Becomes:
 
 _____________
 
@@ -57,6 +57,9 @@ _____________
   How to use:
   *Type Command->  (Command-Shift-.)
 
+Creates:
+
+_____________
 // $Id$
 
 /**
@@ -64,3 +67,4 @@ _____________
  *
  * Description of file.
  */
+_____________
