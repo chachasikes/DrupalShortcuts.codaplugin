@@ -28,19 +28,6 @@ _____________
 Becomes:
 
 _____________
-
-/**
- * Description of my_function.
- *
- * @param $param1
- *   Parameter description here.
- *
- * @param  $param2
- *   Parameter description here.
- *
- * @return
- *   Return description here.
- */
 function my_function($param1, $param2) {
   return 'string';
 }
@@ -56,7 +43,7 @@ _____________
   How to use:
   *Type Command->  (Command-Shift-.)
 
-Creates:
+Inserts:
 
 _____________
 // $Id$

@@ -25,42 +25,64 @@
 	<key>commands</key>
 	<array>
 		<dict>
-			<key>fallbackInput</key>
-			<string>none</string>
-			<key>input</key>
-			<string>selection</string>
-			<key>keyEquivalent</key>
-			<string>@.</string>
-			<key>keyEquivalentConflict</key>
-			<false/>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>name</key>
+					<string>CoderFormatFunctions</string>
+					<key>uuid</key>
+					<string>D3BC988A-453F-41F7-B2C7-E43690501B9B</string>
+				</dict>
+			</array>
 			<key>name</key>
-			<string>Drupal Doc Block</string>
-			<key>output</key>
-			<string>replaceSelectedText</string>
-			<key>script</key>
-			<string>drupaldocblock.php</string>
-			<key>setInsertionPoint</key>
-			<false/>
-			<key>uuid</key>
-			<string>914A17B1-92B8-4FDC-A816-E116CCE44DDA</string>
+			<string>FormatCode</string>
 		</dict>
 		<dict>
-			<key>fallbackInput</key>
-			<string>none</string>
-			<key>input</key>
-			<string>none</string>
-			<key>keyEquivalent</key>
-			<string>@&gt;</string>
-			<key>keyEquivalentConflict</key>
-			<false/>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>input</key>
+					<string>none</string>
+					<key>keyEquivalent</key>
+					<string>@&gt;</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
+					<key>name</key>
+					<string>Drupal File Block</string>
+					<key>output</key>
+					<string>afterSelectedText</string>
+					<key>script</key>
+					<string>drupalfileblock.php</string>
+					<key>uuid</key>
+					<string>6CCEAFB2-FD8C-453F-96FC-D25F0E91361B</string>
+				</dict>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>input</key>
+					<string>selection</string>
+					<key>keyEquivalent</key>
+					<string>@.</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
+					<key>name</key>
+					<string>Drupal Doc Block</string>
+					<key>output</key>
+					<string>replaceSelectedText</string>
+					<key>script</key>
+					<string>drupaldocblock.php</string>
+					<key>setInsertionPoint</key>
+					<false/>
+					<key>uuid</key>
+					<string>914A17B1-92B8-4FDC-A816-E116CCE44DDA</string>
+				</dict>
+			</array>
 			<key>name</key>
-			<string>Drupal File Block</string>
-			<key>output</key>
-			<string>afterSelectedText</string>
-			<key>script</key>
-			<string>drupal_file_block.php</string>
-			<key>uuid</key>
-			<string>6CCEAFB2-FD8C-453F-96FC-D25F0E91361B</string>
+			<string>Documentation</string>
 		</dict>
 	</array>
 </dict>

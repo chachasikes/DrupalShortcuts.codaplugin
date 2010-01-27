@@ -1,0 +1,4 @@
+# Can ignore specific files
+.DS_STORE
+coda_scripts
+resources
