@@ -54,6 +54,9 @@ _____________
 *DrupalFileBlock: Create the block of text that goes at the
  beginning of Drupal files.
 
+  How to use:
+  *Type Command->  (Command-Shift-.)
+
 // $Id$
 
 /**
