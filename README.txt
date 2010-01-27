@@ -5,13 +5,15 @@ Features include:
 *DrupalDocBlock
 *DrupalFileBlock
 *FormatFunctionSugar
+*Associative Array
+*NestedArray
 
 --------------------------------------------------------------------------------
 
 *DrupalDocBlock: Create a doc block for a function.
 
   How to use:
-  *Select a function and type Command-.  (Command and a period)
+  *Select a function and type Command-Option-/
     
   A Drupal code standard doc block will be created.
   Based on these standards: http://drupal.org/node/1354?no_cache=1264546172
@@ -29,14 +31,13 @@ _____________
 Becomes:
 
 _____________
-
 /**
- * This function my_function .
+ * This function my_function  .
  *
  * @param $param1
  *   Variable.
  *
- * @param $param2
+ * @param  $param2
  *   Variable.
  *
  * @return
@@ -55,7 +56,7 @@ _____________
  beginning of Drupal files.
 
   How to use:
-  *Type Command->  (Command-Shift-.) Command+Shift+Period
+  *Type Command->  (Command-Option-4  (remember it by the $ - //  $Id$))
 
 Inserts:
 
@@ -83,7 +84,7 @@ function functionname $variable $variable $variable : $variable
 
 2. Select what you have typed. 
 
-3. Enter: Command-\  
+3. Enter: Command-Option-[
 
 _____________
 function modulename_taskname $astring $array : $output
@@ -104,8 +105,56 @@ _____________
  * @return
  *   Return.
  */
+
 function modulename_taskname($astring, $array) {
-  
   return $output;
 }
+_____________
+
+
+
+
+
+*Associative Array
+
+Insert the syntax for an associative array.
+
+How to use:
+
+Enter: Command-Option-r
+
+Inserts:
+_____________
+array(
+  '' => '',
+  '' => '',
+);
+_____________
+
+
+
+
+
+*Nested Array
+
+Insert a two level array.
+
+How to use:
+
+1. Select a variable
+2. Enter: Command-Option-R  (Command-Option-Shift-R)
+
+
+_____________
+$var
+_____________
+
+Becomes:
+_____________
+$var = array(
+    '' => '',
+    '' => array(
+        '' => '',
+    ),     
+  );
 _____________
