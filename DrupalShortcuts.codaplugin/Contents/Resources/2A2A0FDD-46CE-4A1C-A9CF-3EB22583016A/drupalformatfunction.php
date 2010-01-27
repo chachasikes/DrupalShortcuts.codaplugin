@@ -21,13 +21,14 @@ function generate_output($input) {
  *
  * Example:
  * 1. Enter:
+ * description of function
  * function functionname $variable $variable $variable : $variable
  *
- * - Separate arguments by spaces, not commas.
- * - Enter a color then
+ * Separate arguments by spaces, not commas.
+ * Enter a color then
  *
  * 2. Select what you have typed. 
- * -It will receive all the function formatting,
+ * It will receive all the function formatting,
  *
  */
 function function_sugar($input) {
@@ -35,7 +36,7 @@ function function_sugar($input) {
   $input_clean = preg_replace('/\s\s+/', ' ', $input);
   $return_string = explode(':', $input_clean);
 
-  $return = trim($return_string[1]);
+  $return = $return_string[1];
   $args = explode(' ', $return_string[0]);
 
   $output = '
@@ -45,17 +46,15 @@ function function_sugar($input) {
   if(empty($last_arg)) {
     array_pop($args);
   }
-  $output .= '(' . implode(', ', $args) . ')' . ' {
-  ';
+  $output .= '(' . implode(', ', $args) . ')' . ' {';
   
   if (!empty($return)) {
     $output .= '
-  return ' . $return . ';';
+  return ' . trim($return) . ';' ;
   }
 
   $output .= '
-}'
-;
+}';
   $output = create_doc_block($output);
   return $output;
 }
@@ -88,14 +87,14 @@ function create_doc_block($input) {
  *
  * @return
  *   Return.';
-
-  }
+}
 
   $output .= '/**
  * This function ' . trim($input_formatted) . ' $$IP$$.'
   . $parameters_output
   . $return_output . '
- */' . $input ;
+ */
+' . $input ;
  return $output;
 }
 

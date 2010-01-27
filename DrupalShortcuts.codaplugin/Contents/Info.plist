@@ -25,78 +25,102 @@
 	<key>commands</key>
 	<array>
 		<dict>
-			<key>children</key>
-			<array>
-				<dict>
-					<key>fallbackInput</key>
-					<string>none</string>
-					<key>input</key>
-					<string>selection</string>
-					<key>keyEquivalent</key>
-					<string>@\</string>
-					<key>keyEquivalentConflict</key>
-					<false/>
-					<key>name</key>
-					<string>Format Function Sugar</string>
-					<key>output</key>
-					<string>replaceSelectedText</string>
-					<key>preprocess</key>
-					<string>none</string>
-					<key>script</key>
-					<string>drupalformatfunction.php</string>
-					<key>setInsertionPoint</key>
-					<true/>
-					<key>uuid</key>
-					<string>429BA9F4-72A7-4A56-A165-53DE66278F3D</string>
-				</dict>
-			</array>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>selection</string>
+			<key>keyEquivalent</key>
+			<string>~@[</string>
+			<key>keyEquivalentConflict</key>
+			<true/>
 			<key>name</key>
-			<string>Format Code</string>
+			<string>Function Format Sugar</string>
+			<key>output</key>
+			<string>replaceSelectedText</string>
+			<key>script</key>
+			<string>drupalformatfunction.php</string>
+			<key>setInsertionPoint</key>
+			<true/>
+			<key>uuid</key>
+			<string>2A2A0FDD-46CE-4A1C-A9CF-3EB22583016A</string>
 		</dict>
 		<dict>
-			<key>children</key>
-			<array>
-				<dict>
-					<key>fallbackInput</key>
-					<string>none</string>
-					<key>input</key>
-					<string>none</string>
-					<key>keyEquivalent</key>
-					<string>@&gt;</string>
-					<key>keyEquivalentConflict</key>
-					<true/>
-					<key>name</key>
-					<string>Drupal File Block</string>
-					<key>output</key>
-					<string>afterSelectedText</string>
-					<key>script</key>
-					<string>drupalfileblock.php</string>
-					<key>uuid</key>
-					<string>6CCEAFB2-FD8C-453F-96FC-D25F0E91361B</string>
-				</dict>
-				<dict>
-					<key>fallbackInput</key>
-					<string>none</string>
-					<key>input</key>
-					<string>selection</string>
-					<key>keyEquivalent</key>
-					<string>@.</string>
-					<key>keyEquivalentConflict</key>
-					<true/>
-					<key>name</key>
-					<string>Drupal Doc Block</string>
-					<key>output</key>
-					<string>replaceSelectedText</string>
-					<key>script</key>
-					<string>drupaldocblock.php</string>
-					<key>setInsertionPoint</key>
-					<true/>
-					<key>uuid</key>
-					<string>671CD7EC-B759-4F82-BF72-CA0EDCC7C0F5</string>
-				</dict>
-			</array>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>selection</string>
+			<key>keyEquivalent</key>
+			<string>~@/</string>
+			<key>keyEquivalentConflict</key>
+			<true/>
 			<key>name</key>
-			<string>Documentation</string>
+			<string>Drupal Doc Block</string>
+			<key>output</key>
+			<string>replaceSelectedText</string>
+			<key>script</key>
+			<string>drupaldocblock.php</string>
+			<key>setInsertionPoint</key>
+			<true/>
+			<key>uuid</key>
+			<string>B1FDD1B9-209C-482C-92B2-3D4C716D922F</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>none</string>
+			<key>keyEquivalent</key>
+			<string>~@r</string>
+			<key>keyEquivalentConflict</key>
+			<true/>
+			<key>name</key>
+			<string>Associative Array</string>
+			<key>output</key>
+			<string>afterSelectedText</string>
+			<key>script</key>
+			<string>associativearray.php</string>
+			<key>setInsertionPoint</key>
+			<false/>
+			<key>uuid</key>
+			<string>39C8C2EE-F7CC-4B2A-B688-2A91741A8D97</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>selection</string>
+			<key>keyEquivalent</key>
+			<string>$~@r</string>
+			<key>keyEquivalentConflict</key>
+			<true/>
+			<key>name</key>
+			<string>Nested Array</string>
+			<key>output</key>
+			<string>replaceSelectedText</string>
+			<key>script</key>
+			<string>nestedarray.php</string>
+			<key>setInsertionPoint</key>
+			<true/>
+			<key>uuid</key>
+			<string>CCA4EAD1-2218-4ED5-9D98-D9258C0DBF98</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>input</key>
+			<string>none</string>
+			<key>keyEquivalent</key>
+			<string>~@4</string>
+			<key>keyEquivalentConflict</key>
+			<true/>
+			<key>name</key>
+			<string>Drupal File Block</string>
+			<key>output</key>
+			<string>replaceSelectedText</string>
+			<key>script</key>
+			<string>drupalfileblock.php</string>
+			<key>uuid</key>
+			<string>6571391C-9E66-463B-BA2C-D9F78397BD7F</string>
 		</dict>
 	</array>
 </dict>

@@ -2,16 +2,17 @@
 <?php
 
 $input = "";
-
 $fp = fopen("php://stdin", "r");
 while ( $line = fgets($fp, 1024) )
 $input .= $line;
 
 fclose($fp);
 
-process_function($input);
 
-function process_function($input) {
+echo create_doc_block($input);
+
+/** Functions **/
+function create_doc_block($input) {
   $output = '';
 
   // Get name of function.
@@ -20,36 +21,33 @@ function process_function($input) {
   // Process parameters.
   $signature = _get_string_between($input, '(', ')');
   $parameters = explode(',', $signature);
-  $parameter_formatted = '';
+  $parameters_output = '';
   foreach($parameters as $param) {
     $parameter_formatted = '
  *
  * @param ' . $param . '
- *   Parameter description here.';
+ *   Variable.';
    $parameters_output .= $parameter_formatted;
   }
-
   // Add a return documentation.
+  $return_output = '';
   $return_param = strpos($input, 'return');
   if($return_param) {
     $return_output = '
  *
-loaded
  * @return
- *   Return description here.';
+ *   Return.';
 
   }
 
-  $output = '
-/**
- * Description of ' . trim($input_formatted) . '.'
+  $output .= '/**
+ * This function ' . trim($input_formatted) . '  $$IP$$.'
   . $parameters_output
   . $return_output . '
  */
 ' . $input ;
 
-  echo $output;
-
+ return $output;
 }
 
 function _get_string_between($string, $start, $end){
